@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-#import seaborn as sns
+import seaborn as sns
 #import lightgbm as lgb
 
 
@@ -43,3 +43,5 @@ st.write(train[['genre', 'box_off_num']].groupby('genre').mean().sort_values('bo
 # train 데이터에서 장르와 관객수를 선택하고 장르별 관객수를 더해서 나타냄
 
 # sns.heatmap(train.corr(), annot=True)
+
+st.write(sns.__version__)
