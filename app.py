@@ -42,6 +42,4 @@ pd.options.display.float_format = '{:.1f}'.format
 st.write(train[['genre', 'box_off_num']].groupby('genre').mean().sort_values('box_off_num'))
 # train 데이터에서 장르와 관객수를 선택하고 장르별 관객수를 더해서 나타냄
 
-# sns.heatmap(train.corr(), annot=True)
-
-st.write(sns.__version__)
+sns.heatmap(train.corr(), annot=True)
